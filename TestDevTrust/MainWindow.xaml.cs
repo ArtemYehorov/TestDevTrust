@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Windows;
+using TestDevTrust.Models;
 
 namespace TestDevTrust
 {
@@ -11,7 +12,7 @@ namespace TestDevTrust
         public MainWindow()
         {
            InitializeComponent();
-           DataContext = new MainWindowViewModel();
+           DataContext = new ViewModels.MainWindowViewModel();
         }
 
         private void ExportToTXT(object sender, RoutedEventArgs e)

@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Input;
+using TestDevTrust.Models;
 
-namespace TestDevTrust
+namespace TestDevTrust.ViewModels
 {
     public class MainWindowViewModel : INotifyPropertyChanged
     {
