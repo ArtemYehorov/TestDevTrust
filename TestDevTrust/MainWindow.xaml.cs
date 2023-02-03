@@ -19,8 +19,7 @@ namespace TestDevTrust
 
         private void ExportToTXT(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Ok");
-            string fileName = @"C:/1/TableData.txt";
+            string fileName = @"TableData.txt";
             using (StreamWriter sw = new StreamWriter(fileName))
             {
                 int[] selectedRowHandles = gridControl.GetSelectedRowHandles();
@@ -38,8 +37,7 @@ namespace TestDevTrust
 
         private void ExportToCSV(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Ok");
-            string fileName = @"C:/1/TableData.csv";
+            string fileName = @"TableData.csv";
             using (StreamWriter sw = new StreamWriter(fileName))
             {
                 int[] selectedRowHandles = gridControl.GetSelectedRowHandles();

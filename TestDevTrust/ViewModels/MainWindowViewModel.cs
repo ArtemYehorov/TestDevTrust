@@ -32,7 +32,7 @@ namespace TestDevTrust.ViewModels
             get => people;
             set
             {
-                people = value;
+                People = value;
                 OnPropertyChanged(nameof(people));
             }
         }
