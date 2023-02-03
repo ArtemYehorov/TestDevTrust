@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using DevExpress.Office.Utils;
+using System.Diagnostics;
+using System.IO;
 using System.Windows;
 using TestDevTrust.Models;
 
@@ -28,6 +30,10 @@ namespace TestDevTrust
                     sw.WriteLine("Name: " + row.Name + ", Age: " + row.Age + ", Gender: " + row.Gender);
                 }
             }
+            var proc = new Process();
+            proc.StartInfo.FileName = fileName;
+            proc.StartInfo.UseShellExecute = true;
+            proc.Start();
         }
 
         private void ExportToCSV(object sender, RoutedEventArgs e)
@@ -43,6 +49,10 @@ namespace TestDevTrust
                     sw.WriteLine("Name: " + row.Name + ", Age: " + row.Age + ", Gender: " + row.Gender);
                 }
             }
+            var proc = new Process();
+            proc.StartInfo.FileName = fileName;
+            proc.StartInfo.UseShellExecute = true;
+            proc.Start();
         }
     }
 }
